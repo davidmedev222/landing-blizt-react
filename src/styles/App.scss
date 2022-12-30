@@ -1,6 +1,13 @@
 //* GLOBAL
 @use './global/mixins';
-@use './global/reset';
+@use './global/Reset';
 
-//* COMPONENTES
+//* COMPONENTS
 @use './components/header/Header';
+@use './components/article/Article';
+@use './components/icon/Icon';
+@use './components/text/Text';
+
+//* PAGES
+//? HOME
+@use './pages/home/Home';
