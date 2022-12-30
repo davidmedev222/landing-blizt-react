@@ -4,12 +4,13 @@
 // ROOT
 :root {
     // COLORS
-    --text-one: #000000;
+    --text-one: #1c2029;
     --text-two: #ffffff;
     --text-three: #717172;
     // BACKGROUNDS
-    --background-one: #f3f3f5;
-    --background-two: #e7e7ee;
+    --background-one: #e0e1e9;
+    --background-two: #ebbbbb;
+    --background-three: #fdfdff;
     // TYPOGRAPHY
     --family-one: 'Montserrat', sans-serif;
 }
@@ -90,7 +91,6 @@ em {
     font-weight: inherit;
     font-style: inherit;
     text-decoration: none;
-    text-align: center;
     color: inherit;
 }
 
