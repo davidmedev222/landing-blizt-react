@@ -6,10 +6,9 @@
 # **GUIDE**
 
 <ol>
-     <li><a href="#demo">DEMO</a></li>
-     <li><a href="#about-the-project">ABOUT THE PROJECT</a></li>
-     <li><a href="#technologies-used">TECHNOLOGIES USED</a></li>
-     <li><a href="#cloning">CLONING</a></li>
+     <li><a href="#demo">Demo</a></li>
+     <li><a href="#about-the-project">About The Project</a></li>
+     <li><a href="#technologies-used">Technologies Used</a></li>
 </ol>
 
 # **DEMO**
@@ -23,23 +22,3 @@ Blizt Landing Page, where you can see information about the company, services, p
 # **TECHNOLOGIES USED**
 
 Use of `React` for the interface and `Sass` for the styles.
-
-# **CLONING**
-
-1. Cloning of the project
-
-```
-git clone https://github.com/davidmedev222/landing-blizt-react.git
-```
-
-2. Installing dependencies
-
-```
-npm install
-```
-
-3. Project execution
-
-```
-npm run dev
-```
