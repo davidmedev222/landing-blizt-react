@@ -1,22 +1,17 @@
 import { Link } from 'react-router-dom'; // COMPONENT
-import { useToggle } from '../../hooks/toggle/useToggle';
 import { Button } from '../button/Button';
+import { Theme } from '../theme/Theme';
+import { useTheme } from '../../hooks/theme/useTheme';
 
 const Header = () => {
-  const { toggle, onToggle } = useToggle();
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <header className="header">
       {/* TITLE */}
       <h2 className="header-title">blizt</h2>
-      {/* MENU */}
-      <button onClick={onToggle} className="header-menu">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
-        </svg>
-      </button>
       {/* NAVBAR */}
-      <nav className={`nav ${toggle ? 'nav-active' : ''}`}>
+      <nav className="nav">
         <ul className="nav-ul">
           <li className="nav-li">
             <Link className="nav-a" to={'/'}>
@@ -43,6 +38,8 @@ const Header = () => {
       </nav>
       {/* BUTTON */}
       <Button className="header-btn">contact us</Button>
+      {/* DARK MODE */}
+      <Theme toggleTheme={toggleTheme} dark={theme} />
     </header>
   );
 };

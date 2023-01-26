@@ -1,9 +1,12 @@
 // IMPORTED SOURCE
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-// ROOT
 :root {
-  // COLORS
+  // TYPOGRAPHY
+  --family-one: 'Montserrat', sans-serif;
+}
+
+[data-theme='light'] {
   --text-one: #1c2029;
   --text-two: #ffffff;
   --text-three: #717172;
@@ -11,8 +14,15 @@
   --background-one: #e0e1e9;
   --background-two: #ebbbbb;
   --background-three: #fdfdff;
-  // TYPOGRAPHY
-  --family-one: 'Montserrat', sans-serif;
+}
+[data-theme='dark'] {
+  --text-one: #ffffff;
+  --text-two: #1c2029;
+  --text-three: #717172;
+  // BACKGROUNDS
+  --background-one: #1c2029;
+  --background-two: #c29c9c;
+  --background-three: #454546;
 }
 
 // GENERAL
