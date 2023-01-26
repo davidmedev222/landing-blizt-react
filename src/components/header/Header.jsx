@@ -39,7 +39,7 @@ const Header = () => {
       {/* BUTTON */}
       <Button className="header-btn">contact us</Button>
       {/* DARK MODE */}
-      <Theme toggleTheme={toggleTheme} dark={theme} />
+      <Theme toggleTheme={toggleTheme} theme={theme} />
     </header>
   );
 };
