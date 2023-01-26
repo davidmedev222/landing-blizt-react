@@ -6,7 +6,7 @@
     @include flex(column, space-between, flex-start);
     border-radius: 1rem;
     padding: clamp(1.5rem, 1.5vw, 3rem);
-    outline: clamp(0.0625rem, 0.0625vw, 0.125rem) solid black;
+    outline: clamp(0.0625rem, 0.0625vw, 0.125rem) solid var(--text-one);
     transition: background-color 500ms, box-shadow 700ms, transform 700ms;
     gap: clamp(3rem, 3vw, 6rem);
 }
