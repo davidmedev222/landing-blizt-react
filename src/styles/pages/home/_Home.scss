@@ -3,228 +3,219 @@
 
 // STYLES
 .main-landing {
-    padding: clamp(1rem, 1.5vw, 3rem) clamp(1rem, 5vw, 10rem);
+  padding: clamp(1rem, 1.5vw, 3rem) clamp(1rem, 5vw, 10rem);
 }
 .landing {
-    display: grid;
-    grid-template:
-        'art1 art1 art2' auto
-        'art3 art4 art5' auto
-        / 1fr 1fr 1fr;
-    gap: clamp(1rem, 1vw, 2rem);
+  display: grid;
+  grid-template:
+    'art1 art1 art2' auto
+    'art3 art4 art5' auto
+    / 1fr 1fr 1fr;
+  gap: clamp(1rem, 1vw, 2rem);
 }
 // ARTICLES
 .article {
-    &-one {
-        position: relative;
-        grid-column: span 2;
-        gap: clamp(1rem, 2.5vw, 5rem);
-        background-color: var(--background-two);
+  &-one {
+    position: relative;
+    grid-column: span 2;
+    gap: clamp(1rem, 2.5vw, 5rem);
+    background-color: var(--background-two);
 
-        &-title {
-            font-size: clamp(3.75rem, 7vw, 14rem);
-            font-weight: 900;
-            max-width: 50%;
-        }
-        &-footer {
-            @include flex(row, center, center);
-            gap: clamp(1rem, 1rem, 2rem);
-        }
-        &-btn {
-            color: var(--text-two);
-            font-size: clamp(0.85rem, 1.5vw, 3rem);
-            font-weight: 700;
-            border-radius: 3rem;
-            background-color: var(--text-one);
-            padding: 1em 3em;
-            transition: background-color 300ms, transform 300ms;
-        }
-        &-icon {
-            width: clamp(3rem, 4.5vw, 9rem);
-            color: var(--background-three);
-            border: 0.0938rem solid var(--text-two);
-            background-color: var(--text-one);
-            border-radius: 100%;
-            padding: clamp(1em, 1vw, 2em);
-            z-index: 1;
-            transition: border 300ms, transform 300ms, background-color 300ms;
-        }
-        &-picture {
-            width: auto;
-            position: absolute;
-            right: -25%;
-            bottom: 0;
+    &-title {
+      font-size: clamp(3.75rem, 7vw, 14rem);
+      font-weight: 900;
+      max-width: 50%;
+    }
+    &-footer {
+      @include flex(row, center, center);
+      gap: clamp(1rem, 1rem, 2rem);
+    }
+    &-btn {
+      color: var(--text-two);
+      font-size: clamp(0.85rem, 1.5vw, 3rem);
+      font-weight: 700;
+      border-radius: 3rem;
+      background-color: var(--text-one);
+      padding: 1em 3em;
+      transition: background-color 300ms, transform 300ms;
+    }
+    &-icon {
+      width: clamp(3rem, 4.5vw, 9rem);
+      color: var(--background-three);
+      border: 0.0938rem solid var(--text-two);
+      background-color: var(--text-one);
+      border-radius: 100%;
+      padding: clamp(1em, 1vw, 2em);
+      z-index: 1;
+      transition: border 300ms, transform 300ms, background-color 300ms;
+    }
+    &-picture {
+      width: auto;
+      position: absolute;
+      right: -25%;
+      bottom: 0;
 
-            & img {
-                width: clamp(300px, 51.25vw, 1600px);
-            }
-        }
+      & img {
+        width: clamp(300px, 51.25vw, 1600px);
+      }
     }
-    &-two {
-        position: relative;
-        background-image: url('https://res.cloudinary.com/dos3i5jqy/image/upload/v1672428160/landing-blizt-react/fondo-one_mt8g7a.png');
-        background-size: cover;
-        background-position: center;
+  }
+  &-two {
+    position: relative;
+    background-image: url('https://res.cloudinary.com/dos3i5jqy/image/upload/v1672428160/landing-blizt-react/fondo-one_mt8g7a.png');
+    background-size: cover;
+    background-position: center;
 
-        &-text {
-            &-one {
-                top: 10%;
-                left: 25%;
-                transform: rotate(65deg);
-            }
-            &-two {
-                top: 25%;
-                left: 35%;
-                transform: rotate(50deg);
-            }
-            &-three {
-                top: 50%;
-                left: 25%;
-                transform: rotate(45deg);
-            }
-            &-four {
-                top: 20%;
-                left: 60%;
-            }
-            &-five {
-                top: 35%;
-                left: 70%;
-                transform: rotate(55deg);
-            }
-            &-six {
-                top: 55%;
-                left: 60%;
-                transform: rotate(-45deg);
-            }
-        }
-        &-icon {
-            &-one {
-                position: absolute;
-                top: 5%;
-                left: 70%;
-            }
-            &-two {
-                position: absolute;
-                top: 15%;
-                left: 10%;
-            }
-            &-three {
-                position: absolute;
-                top: 85%;
-                left: 50%;
-            }
-        }
+    &-text {
+      &-one {
+        top: 10%;
+        left: 25%;
+        transform: rotate(65deg);
+      }
+      &-two {
+        top: 25%;
+        left: 35%;
+        transform: rotate(50deg);
+      }
+      &-three {
+        top: 50%;
+        left: 25%;
+        transform: rotate(45deg);
+      }
+      &-four {
+        top: 20%;
+        left: 60%;
+      }
+      &-five {
+        top: 35%;
+        left: 70%;
+        transform: rotate(55deg);
+      }
+      &-six {
+        top: 55%;
+        left: 60%;
+        transform: rotate(-45deg);
+      }
     }
-    &-three {
-        &-header {
-            @include flex(row, center, flex-start);
-            gap: clamp(1rem, 2.5vw, 5rem);
-        }
-        &-text {
-            font-size: clamp(0.85rem, 1.25vw, 2.5rem);
-            font-weight: 400;
-        }
-        &-icon {
-            width: clamp(3rem, 3vw, 6rem);
-        }
-        &-logo {
-            width: clamp(3rem, 5vw, 10rem);
-        }
+    &-icon {
+      &-one {
+        position: absolute;
+        top: 5%;
+        left: 70%;
+      }
+      &-two {
+        position: absolute;
+        top: 15%;
+        left: 10%;
+      }
+      &-three {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+      }
     }
-    &-four {
-        &-header {
-            @include flex(column, center, flex-start);
-            gap: clamp(0.5rem, 1vw, 2rem);
-        }
-        &-text {
-            font-size: clamp(0.85rem, 1.25vw, 2.5rem);
-            font-weight: 700;
-        }
-        &-a {
-            color: var(--text-three);
-            font-size: clamp(0.75rem, 1vw, 2rem);
-            font-weight: 600;
-            text-decoration: underline;
-        }
-        &-footer {
-            @include flex(row, center, center);
-            gap: clamp(1rem, 1.5vw, 3rem);
-        }
-        &-users {
-            @include flex(row, center, center);
-        }
-        &-img {
-            width: clamp(2.25rem, 2.5vw, 5rem);
-            height: clamp(2.25rem, 2.5vw, 5rem);
-            object-fit: cover;
-            object-position: center;
-            border-radius: 100%;
-            margin-left: -0.5rem;
-        }
-        &-span {
-            font-size: clamp(0.65rem, 1vw, 2rem);
-            font-weight: 600;
-            max-width: 50%;
-        }
+  }
+  &-three {
+    &-header {
+      @include flex(row, center, flex-start);
+      gap: clamp(1rem, 2.5vw, 5rem);
     }
-    &-five {
-        background-image: url('https://res.cloudinary.com/dos3i5jqy/image/upload/v1672428160/landing-blizt-react/fondo-one_mt8g7a.png');
-        background-size: cover;
-        background-position: center;
+    &-text {
+      font-size: clamp(0.85rem, 1.25vw, 2.5rem);
+      font-weight: 400;
+    }
+    &-icon {
+      width: clamp(3rem, 3vw, 6rem);
+    }
+    &-logo {
+      width: clamp(3rem, 5vw, 10rem);
+    }
+  }
+  &-four {
+    &-header {
+      @include flex(column, center, flex-start);
+      gap: clamp(0.5rem, 1vw, 2rem);
+    }
+    &-text {
+      font-size: clamp(0.85rem, 1.25vw, 2.5rem);
+      font-weight: 700;
+    }
+    &-a {
+      color: var(--text-three);
+      font-size: clamp(0.75rem, 1vw, 2rem);
+      font-weight: 600;
+      text-decoration: underline;
+    }
+    &-footer {
+      @include flex(row, center, center);
+      gap: clamp(1rem, 1.5vw, 3rem);
+    }
+    &-users {
+      @include flex(row, center, center);
+    }
+    &-img {
+      width: clamp(2.25rem, 2.5vw, 5rem);
+      height: clamp(2.25rem, 2.5vw, 5rem);
+      object-fit: cover;
+      object-position: center;
+      border-radius: 100%;
+      margin-left: -0.5rem;
+    }
+    &-span {
+      font-size: clamp(0.65rem, 1vw, 2rem);
+      font-weight: 600;
+      max-width: 50%;
+    }
+  }
+  &-five {
+    background-image: url('https://res.cloudinary.com/dos3i5jqy/image/upload/v1672428160/landing-blizt-react/fondo-one_mt8g7a.png');
+    background-size: cover;
+    background-position: center;
 
-        &-text {
-            font-size: clamp(4rem, 7vw, 14rem);
-            font-weight: 900;
-            line-height: clamp(3.5rem, 3.5vw, 7rem);
-        }
+    &-text {
+      font-size: clamp(4rem, 7vw, 14rem);
+      font-weight: 900;
+      line-height: clamp(3.5rem, 3.5vw, 7rem);
     }
+  }
 }
 
 //MEDIAQUERYS
-@include mediamin(3500px) {
-    #root {
-        justify-content: center;
-        align-items: center;
-    }
-    .landing {
-        max-width: 3500px;
-    }
-}
 @include mediamin(1024px) {
-    .article:not(.article-one, .article-two):hover {
-        box-shadow: -0.625rem 0.625rem 0 0 rgba(33, 33, 33, 1),
-            -1.25rem 1.25rem 0 0 rgba(33, 33, 33, 0.7), -1.875rem 1.875rem 0 0 rgba(33, 33, 33, 0.4);
-        background-color: var(--background-three);
-        transform: translate(1.875rem, -1.875rem);
-        z-index: 1;
+  .article:not(.article-one, .article-two):hover {
+    box-shadow: -0.625rem 0.625rem 0 0 rgba(33, 33, 33, 1),
+      -1.25rem 1.25rem 0 0 rgba(33, 33, 33, 0.7), -1.875rem 1.875rem 0 0 rgba(33, 33, 33, 0.4);
+    background-color: var(--background-three);
+    transform: translate(1.875rem, -1.875rem);
+    z-index: 1;
+  }
+  .article-one {
+    &-btn:hover {
+      color: var(--text-one);
+      background-color: var(--background-three);
+      transform: translateY(-0.4688rem);
     }
-    .article-one {
-        &-btn:hover {
-            color: var(--text-one);
-            background-color: var(--background-three);
-            transform: translateY(-0.4688rem);
-        }
-        &-icon:hover {
-            color: var(--text-one);
-            border: 0.0938rem solid var(--text-one);
-            background-color: var(--background-one);
-            transform: translateY(-0.4688rem);
-        }
+    &-icon:hover {
+      color: var(--text-one);
+      border: 0.0938rem solid var(--text-one);
+      background-color: var(--background-one);
+      transform: translateY(-0.4688rem);
     }
+  }
 }
 @include mediamax(796px) {
-    .landing {
-        grid-template:
-            'art1' auto
-            / 1fr;
-    }
-    .article-one {
-        grid-column: auto;
-    }
-    .article-two {
-        display: none;
-    }
-    .article-one-picture {
-        display: none;
-    }
+  .landing {
+    grid-template:
+      'art1' auto
+      / 1fr;
+  }
+  .article-one {
+    grid-column: auto;
+  }
+  .article-two {
+    display: none;
+  }
+  .article-one-picture {
+    display: none;
+  }
 }
