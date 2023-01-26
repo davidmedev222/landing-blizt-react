@@ -3,7 +3,8 @@
 
 // STYLES
 .header {
-  @include flex(row, flex-start, center);
+  @include flex(row, space-between, center);
+  flex-wrap: wrap;
   gap: clamp(1rem, 5vw, 10rem);
   padding: clamp(1rem, 1.5vw, 3rem) clamp(1rem, 5vw, 10rem);
 
@@ -12,18 +13,16 @@
     font-weight: 700;
     text-transform: uppercase;
   }
+  &-menu {
+    width: clamp(1.5rem, 3vw, 6rem);
+    display: none;
+  }
   &-btn {
     margin-left: auto;
-    color: var(--background-one);
-    font-size: clamp(0.75rem, 1vw, 2rem);
-    font-weight: 400;
-    text-transform: uppercase;
-    background-color: var(--text-one);
-    border-radius: 3rem;
-    padding: 0.5em 1em;
   }
 }
 .nav {
+  @include flex(column, center, center);
   &-ul {
     @include flex(row, center, center);
     gap: clamp(1rem, 3vw, 6rem);
@@ -33,17 +32,37 @@
     gap: clamp(0.5rem, 0.5vw, 1rem);
   }
   &-a {
-    font-size: clamp(0.75rem, 1vw, 2rem);
+    font-size: clamp(0.85rem, 1vw, 2rem);
     font-weight: 400;
     text-transform: uppercase;
   }
   &-arrow {
-    width: clamp(0.5rem, 1vw, 2rem);
+    width: clamp(0.85rem, 1vw, 2rem);
   }
 }
 
-@include mediamax(500px) {
+@include mediamax(34.25rem) {
+  .header {
+    &-btn {
+      display: none;
+    }
+    &-menu {
+      display: block;
+    }
+  }
   .nav {
-    display: none;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    opacity: 0;
+    transition: 500ms ease-in-out;
+
+    &-active {
+      height: 10rem;
+      opacity: 1;
+    }
+    &-ul {
+      @include flex(column, center, center);
+    }
   }
 }
