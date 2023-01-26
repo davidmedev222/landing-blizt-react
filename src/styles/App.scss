@@ -3,6 +3,7 @@
 @use './global/Reset';
 
 //* COMPONENTS
+@use '../components/button/Button';
 @use './components/header/Header';
 @use './components/article/Article';
 @use './components/icon/Icon';

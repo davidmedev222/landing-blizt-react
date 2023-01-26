@@ -3,45 +3,51 @@
 
 // ROOT
 :root {
-    // COLORS
-    --text-one: #1c2029;
-    --text-two: #ffffff;
-    --text-three: #717172;
-    // BACKGROUNDS
-    --background-one: #e0e1e9;
-    --background-two: #ebbbbb;
-    --background-three: #fdfdff;
-    // TYPOGRAPHY
-    --family-one: 'Montserrat', sans-serif;
+  // COLORS
+  --text-one: #1c2029;
+  --text-two: #ffffff;
+  --text-three: #717172;
+  // BACKGROUNDS
+  --background-one: #e0e1e9;
+  --background-two: #ebbbbb;
+  --background-three: #fdfdff;
+  // TYPOGRAPHY
+  --family-one: 'Montserrat', sans-serif;
 }
 
 // GENERAL
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: baseline;
 
-    &::-webkit-scrollbar {
-        width: 0.5rem;
-        background-color: var(--background-one);
-    }
-    &::-webkit-scrollbar-thumb {
-        background-color: var(--text-one);
-        border-radius: 3rem;
-    }
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: var(--background-one);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--text-one);
+    border-radius: 3rem;
+  }
+}
+
+body {
+  background-color: var(--background-one);
+  max-width: 3500px;
+  margin: 0 auto;
 }
 
 #root {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    min-height: 100vh;
-    font-size: 100%;
-    font-family: var(--family-one);
-    color: var(--text-one);
-    background-color: var(--background-one);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--family-one);
+  color: var(--text-one);
+  background-color: var(--background-one);
 }
 
 img,
@@ -49,28 +55,28 @@ picture,
 video,
 iframe,
 figure {
-    max-width: 100%;
-    width: 100%;
-    display: block;
+  max-width: 100%;
+  width: 100%;
+  display: block;
 }
 
 a {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    font-size: inherit;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
 }
 
 p a {
-    display: inline;
+  display: inline;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -87,22 +93,22 @@ i,
 b,
 u,
 em {
-    font-size: 1em;
-    font-weight: inherit;
-    font-style: inherit;
-    text-decoration: none;
-    color: inherit;
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 // TEXT AND COLOR SELECTION
 ::-moz-selection {
-    background-color: var(--text-one);
-    color: var(--background-one);
+  background-color: var(--text-one);
+  color: var(--background-one);
 }
 
 ::selection {
-    background-color: var(--text-one);
-    color: var(--background-one);
+  background-color: var(--text-one);
+  color: var(--background-one);
 }
 
 form,
@@ -111,17 +117,17 @@ textarea,
 select,
 button,
 label {
-    display: block;
-    background-color: transparent;
-    color: inherit;
-    font-family: inherit;
-    font-size: inherit;
-    appearance: none;
-    -webkit-appearance: none;
+  display: block;
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 svg {
-    display: block;
-    width: 100%;
-    fill: currentColor;
+  display: block;
+  width: 100%;
+  fill: currentColor;
 }
