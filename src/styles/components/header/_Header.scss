@@ -4,7 +4,6 @@
 // STYLES
 .header {
   @include flex(row, space-between, center);
-  flex-wrap: wrap;
   gap: clamp(1rem, 5vw, 10rem);
   padding: clamp(1rem, 1.5vw, 3rem) clamp(1rem, 5vw, 10rem);
 
@@ -13,16 +12,11 @@
     font-weight: 700;
     text-transform: uppercase;
   }
-  &-menu {
-    width: clamp(1.5rem, 3vw, 6rem);
-    display: none;
-  }
   &-btn {
     margin-left: auto;
   }
 }
 .nav {
-  @include flex(column, center, center);
   &-ul {
     @include flex(row, center, center);
     gap: clamp(1rem, 3vw, 6rem);
@@ -41,28 +35,13 @@
   }
 }
 
-@include mediamax(34.25rem) {
+@include mediamax(700px) {
   .header {
     &-btn {
       display: none;
     }
-    &-menu {
-      display: block;
-    }
   }
   .nav {
-    height: 0;
-    width: 100%;
-    overflow: hidden;
-    opacity: 0;
-    transition: 500ms ease-in-out;
-
-    &-active {
-      height: 10rem;
-      opacity: 1;
-    }
-    &-ul {
-      @include flex(column, center, center);
-    }
+    display: none;
   }
 }
