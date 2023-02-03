@@ -22,7 +22,7 @@ const Home = () => {
             <h1 data-fade className="article-one-title">
               Look beyond limits
             </h1>
-            <footer data-fade data-delay="5000" className="article-one-footer">
+            <footer data-fade data-delay="4000" className="article-one-footer">
               <button className="article-one-btn">Get in touch</button>
               <button className="article-one-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
