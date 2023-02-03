@@ -169,10 +169,19 @@
     }
   }
   &-five {
-    background-image: url('https://res.cloudinary.com/dos3i5jqy/image/upload/v1672428160/landing-blizt-react/fondo-one_mt8g7a.png');
-    background-size: cover;
-    background-position: center;
+    position: relative;
+    overflow: hidden;
 
+    &-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+
+      &-dark {
+        filter: invert(100%);
+      }
+    }
     &-text {
       font-size: clamp(4rem, 7vw, 14rem);
       font-weight: 900;

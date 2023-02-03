@@ -1,10 +1,11 @@
+import { ThemeContext } from '../../context/theme/ThemeContext';
 import { Link } from 'react-router-dom'; // COMPONENT
 import { Button } from '../button/Button';
 import { Theme } from '../theme/Theme';
-import { useTheme } from '../../hooks/theme/useTheme';
+import { useContext } from 'react';
 
 const Header = () => {
-  const { theme, toggleTheme } = useTheme();
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
     <header data-fade className="header">

@@ -4,8 +4,12 @@ import { Text } from '../../components/text/Text'; // COMPONENT
 import { Icon } from '../../components/icon/Icon'; // COMPONENT
 import { Link } from 'react-router-dom'; // COMPONENT
 import { Loader } from '../../components/loader/Loader'; // COMPONENT
+import { useContext } from 'react'; // HOOKS
+import { ThemeContext } from '../../context/theme/ThemeContext'; // CONTEXT
 
 const Home = () => {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <>
       {/* COMPONENT */}
@@ -113,6 +117,11 @@ const Home = () => {
             <h3 data-fade className="article-five-text">
               3D
             </h3>
+            <img
+              className={`article-five-img ${theme === 'dark' ? 'article-five-img-dark' : ''}`}
+              src="https://res.cloudinary.com/dos3i5jqy/image/upload/v1672428160/landing-blizt-react/fondo-one_mt8g7a.png"
+              alt="fondo con puntos"
+            />
             {/* COMPONENT */}
             <Icon>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
