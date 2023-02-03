@@ -1,0 +1,18 @@
+[data-fade] {
+  animation: fade 2000ms ease-in-out 3000ms forwards;
+  opacity: 0;
+}
+
+@keyframes fade {
+  0% {
+    transform: translateY(2.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-delay='5000'] {
+  animation-delay: 5000ms;
+}
