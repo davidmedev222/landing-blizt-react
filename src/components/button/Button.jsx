@@ -1,5 +1,9 @@
-const Button = ({ className = '', children }) => {
-  return <button className={`btn ${className}`}>{children}</button>;
+const Button = ({ className = '', children, ...rest }) => {
+  return (
+    <button {...rest} className={`btn ${className}`}>
+      {children}
+    </button>
+  );
 };
 
 export { Button };

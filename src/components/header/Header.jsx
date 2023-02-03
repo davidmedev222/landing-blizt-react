@@ -7,7 +7,7 @@ const Header = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <header className="header">
+    <header data-fade className="header">
       {/* TITLE */}
       <h2 className="header-title">blizt</h2>
       {/* NAVBAR */}
