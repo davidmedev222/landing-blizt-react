@@ -13,14 +13,14 @@
      <li><a href="#technologies-used">Technologies Used</a></li>
 </ol>
 
-# **💥 DEMO**
+# **💥DEMO**
 
 [https://blizt.vercel.app/](https://blizt.vercel.app/)
 
-# **💬 ABOUT THE PROJECT**
+# **💬ABOUT THE PROJECT**
 
 Blizt Landing Page, where you can see information about the company, services, projects and how to contact the brand.
 
-# **🌐 TECHNOLOGIES USED**
+# **🌐TECHNOLOGIES USED**
 
 Use of `React` for the interface and `Sass` for the styles.
