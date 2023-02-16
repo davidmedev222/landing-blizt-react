@@ -1,5 +1,5 @@
 const Text = ({ className, children }) => {
-    return <span className={`text ${className ?? ''}`}>{children}</span>;
-};
+  return <span className={`text ${className ?? ''}`}>{children}</span>
+}
 
-export { Text };
+export { Text }

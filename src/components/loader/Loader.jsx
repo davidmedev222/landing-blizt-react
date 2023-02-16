@@ -1,16 +1,16 @@
-import { useEffect, useState } from 'react';
-import { Triangle } from 'react-loader-spinner';
+import { useEffect, useState } from 'react'
+import { Triangle } from 'react-loader-spinner'
 
 const Loader = () => {
-  const [loaderClass, updateLoaderClass] = useState('loader');
+  const [loaderClass, updateLoaderClass] = useState('loader')
 
   useEffect(() => {
     setTimeout(() => {
-      updateLoaderClass('loader loader-active');
-    }, 3000);
-  }, []);
+      updateLoaderClass('loader loader-active')
+    }, 3000)
+  }, [])
 
-  return <Triangle wrapperClass={loaderClass} color="#ffffff" ariaLabel="triangle-loading" />;
-};
+  return <Triangle wrapperClass={loaderClass} color='#ffffff' ariaLabel='triangle-loading' />
+}
 
-export { Loader };
+export { Loader }

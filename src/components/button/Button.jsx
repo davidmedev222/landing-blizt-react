@@ -3,7 +3,7 @@ const Button = ({ className = '', children, ...rest }) => {
     <button {...rest} className={`btn ${className}`}>
       {children}
     </button>
-  );
-};
+  )
+}
 
-export { Button };
+export { Button }

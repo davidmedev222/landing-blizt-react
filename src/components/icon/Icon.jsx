@@ -1,5 +1,5 @@
 const Icon = ({ className, children }) => {
-    return <button className={`icon ${className ?? ''}`}>{children}</button>;
-};
+  return <button className={`icon ${className ?? ''}`}>{children}</button>
+}
 
-export { Icon };
+export { Icon }

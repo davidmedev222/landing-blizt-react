@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
 const useToggle = () => {
-  const [toggle, updateToggle] = useState(false);
+  const [toggle, updateToggle] = useState(false)
 
-  const onToggle = () => updateToggle(!toggle);
+  const onToggle = () => updateToggle(!toggle)
 
-  return { toggle, onToggle };
-};
+  return { toggle, onToggle }
+}
 
-export { useToggle };
+export { useToggle }
