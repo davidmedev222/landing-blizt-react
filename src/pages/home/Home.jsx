@@ -12,6 +12,8 @@ const Home = () => {
 
   return (
     <>
+      {/* LOADER */}
+      <Loader />
       {/* COMPONENT */}
       <Header />
       <main className='main-landing'>
@@ -130,8 +132,6 @@ const Home = () => {
             </Icon>
           </Article>
         </section>
-        {/* LOADER */}
-        <Loader />
       </main>
     </>
   )
