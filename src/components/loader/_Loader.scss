@@ -8,9 +8,5 @@
   display: flex;
   align-items: center;
   z-index: 2;
-  transition: width 500ms ease-in-out;
-
-  &-off {
-    width: 0;
-  }
+  animation: close 2000ms ease-in-out 2000ms forwards;
 }
