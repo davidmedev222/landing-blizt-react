@@ -2,21 +2,15 @@ import { useEffect, useState } from 'react'
 import { Triangle } from 'react-loader-spinner'
 
 const Loader = () => {
-  const [loader, updateLoader] = useState({
-    class: 'loader',
-    view: true
-  })
+  const [show, updateShow] = useState(true)
 
   useEffect(() => {
-    setTimeout(() => {
-      updateLoader({ ...loader, class: 'loader loader-off' })
-    }, 3000)
-    setTimeout(() => {
-      updateLoader({ ...loader, view: false })
-    }, 3500)
+    const show = setTimeout(() => updateShow(false), 4000)
+
+    return () => clearTimeout(show)
   }, [])
 
-  return loader.view && <Triangle wrapperClass={loader.class} color='#ffffff' ariaLabel='triangle-loading' />
+  return show && <Triangle wrapperClass='loader' color='#ffffff' ariaLabel='triangle-loading' />
 }
 
 export { Loader }
