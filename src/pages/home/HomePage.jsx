@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom' // COMPONENT
 import { useContext } from 'react' // HOOKS
 import { ThemeContext } from '../../context/theme/ThemeContext' // CONTEXT
 
-const Home = () => {
+const HomePage = () => {
   const { theme } = useContext(ThemeContext)
 
   return (
@@ -133,4 +133,4 @@ const Home = () => {
   )
 }
 
-export { Home }
+export { HomePage }
