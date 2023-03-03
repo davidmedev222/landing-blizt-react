@@ -1,9 +1,5 @@
-import { Header } from '../../components/header/Header' // COMPONENT
-import { Article } from '../../components/article/Article' // COMPONENT
-import { Text } from '../../components/text/Text' // COMPONENT
-import { Icon } from '../../components/icon/Icon' // COMPONENT
+import { Header, Article, Text, Icon, Loader } from '../../components/export'
 import { Link } from 'react-router-dom' // COMPONENT
-import { Loader } from '../../components/loader/Loader' // COMPONENT
 import { useContext } from 'react' // HOOKS
 import { ThemeContext } from '../../context/theme/ThemeContext' // CONTEXT
 
