@@ -5,7 +5,7 @@ const Loader = () => {
   const [show, updateShow] = useState(true)
 
   useEffect(() => {
-    const show = setTimeout(() => updateShow(false), 4000)
+    const show = setTimeout(() => updateShow(false), 5000)
 
     return () => clearTimeout(show)
   }, [])
