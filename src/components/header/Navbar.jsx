@@ -6,19 +6,19 @@ const Navbar = () => {
     <nav className='nav'>
       <ul className='nav-ul'>
         <li className='nav-li'>
-          <Link className='nav-a' to='/'>
+          <Link className='nav-a' to='/services'>
             services
           </Link>
           <IconArrow className='nav-arrow' />
         </li>
         <li className='nav-li'>
-          <Link className='nav-a' to='/'>
+          <Link className='nav-a' to='/projects'>
             projects
           </Link>
           <IconArrow className='nav-arrow' />
         </li>
         <li className='nav-li'>
-          <Link className='nav-a' to='/'>
+          <Link className='nav-a' to='/about'>
             about
           </Link>
         </li>
