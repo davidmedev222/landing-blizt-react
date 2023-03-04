@@ -11,7 +11,9 @@
 @use './components/text/Text';
 @use '../components/theme/Theme';
 @use '../components/loader/Loader';
+@use './components/construction/Construction';
 
 //* PAGES
 //? HOME
 @use './pages/home/Home';
+@use './pages/error/Error';

@@ -1,0 +1,6 @@
+export { LayoutPages } from './layout/LayoutPages'
+export { HomePage } from './home/HomePage'
+export { ServicesPage } from './services/ServicesPage'
+export { ProjectsPage } from './projects/ProjectsPage'
+export { AboutPage } from './about/AboutPage'
+export { ErrorPage } from './error/ErrorPage'
