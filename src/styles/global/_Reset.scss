@@ -141,3 +141,9 @@ svg {
   width: 100%;
   fill: currentColor;
 }
+
+.page-services, .page-projects, .page-about, .page-error {
+  display: grid;
+  place-content: center;
+  padding: 1rem;
+}
