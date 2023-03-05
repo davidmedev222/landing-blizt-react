@@ -6,6 +6,7 @@
   @include flex(row, space-between, center);
   gap: clamp(1rem, 5vw, 10rem);
   padding: clamp(1rem, 1.5vw, 3rem) clamp(1rem, 5vw, 10rem);
+  opacity: 0;
 
   &-a {
     font-size: clamp(1.25rem, 2.25vw, 4.5rem);

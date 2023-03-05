@@ -3,12 +3,17 @@ import { Navbar, Button } from '../export'
 import { Theme } from '../theme/Theme'
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { useIntersection } from '../../hooks/intersection/useIntersection'
 
 const Header = () => {
   const { theme, toggleTheme } = useContext(ThemeContext)
 
+  const [elementRef, isIntersecting] = useIntersection({
+    threshold: 1
+  }, true)
+
   return (
-    <header data-fade className='header'>
+    <header ref={elementRef} data-fade={isIntersecting} className='header'>
       {/* TITLE */}
       <Link to='/' className='header-a'>blizt</Link>
       {/* NAVBAR */}

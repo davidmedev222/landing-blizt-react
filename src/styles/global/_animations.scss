@@ -1,17 +1,19 @@
 //? ANIMATIONS
-[data-fade] {
-  animation: fade 2000ms ease-in-out 3000ms forwards;
-  opacity: 0;
+[data-fade=true] {
+  animation: fade 2000ms ease-in-out forwards;
 }
 
 //? KEYFRAMES
 @keyframes fade {
   0% {
-    transform: translateY(2.5rem);
+    transform: translateY(50%);
+  }
+  50%{
+    transform: translateY(-15%);
   }
   100% {
-    opacity: 1;
     transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -37,6 +39,6 @@
 }
 
 //? DELAYS
-[data-delay='4000'] {
-  animation-delay: 4000ms;
+[data-delay="1000"]{
+  animation-delay: 1000ms;
 }
