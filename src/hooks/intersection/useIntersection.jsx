@@ -5,9 +5,14 @@ const useIntersection = (options = {}, unobserve = false) => {
   const ref = useRef(null)
 
   const callback = (elements) => elements.forEach((element) => {
-    updateIsIntersecting(element.isIntersecting)
-
-    if (element.isIntersecting && unobserve) return observer.unobserve(element.target)
+    if (element.isIntersecting) {
+      updateIsIntersecting(true)
+      if (unobserve) {
+        observer.unobserve(element.target)
+      }
+    } else {
+      updateIsIntersecting(false)
+    }
   })
 
   const observer = new window.IntersectionObserver(callback, options)
