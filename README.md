@@ -25,3 +25,5 @@ Blizt Landing Page, where you can see information about the company, services, p
 # **🌐TECHNOLOGIES USED**
 
 Use of `React` for the interface and `Sass` for the styles.
+Se uso `ViteJs` como framework de desarollo, `ReactJs` para el desarrollo de interfaces, `Sass` para el desarrollo de estilos, `Context API` para el manejo y gestión de estados globales, `React Router Dom` para enrutamiento del proyecto, `Husky` para la ejecucion de los hooks de Git, `StandardJs` como linter de código, 
+`Pnpm` para la gestión de paquetes, `Git` para el control de versiones y `Github` para hospedar el código del proyecto.
