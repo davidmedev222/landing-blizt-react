@@ -24,5 +24,4 @@ Blizt Landing Page, where you can see information about the company, services, p
 
 # **🌐TECHNOLOGIES USED**
 
-I use `ViteJs` as development framework, `ReactJs` for interface development, `Sass` for style development, `Context API` for global state management, `React Router Dom` for project routing, `Husky` for Git hook execution, `StandardJs` as code linter, 
-Pnpm` for package management, `Git` for version control and `Github` for hosting the project code.
+I use `ViteJs` as development framework, `ReactJs` for interface development, `Sass` for style development, `Context API` for global state management, `React Router Dom` for project routing, `Husky` for Git hook execution, `StandardJs` as code linter, `Pnpm` for package management, `Git` for version control and `Github` for hosting the project code.
